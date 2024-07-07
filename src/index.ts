@@ -71,8 +71,8 @@ interface Headers {
 const app = new Hono();
 app.use('*', cors({
     origin: '*',  // Allow all origins
-    allowMethods: '*',  // Allow all methods
-    allowHeaders: '*',  // Allow all headers
+    // allowMethods: '*',  // Allow all methods
+    // allowHeaders: '*',  // Allow all headers
     allowCredentials: true,  // Allow cookies and authorization headers
     maxAge: 86400,  // Cache preflight response for 1 day
 }));
